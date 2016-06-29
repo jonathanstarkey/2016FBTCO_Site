@@ -1,3 +1,4 @@
+/* NAV ONSCROLL */
 $('#nav').affix({
       offset: {
         top: $('.overlay').height()-$('#nav').height()
@@ -19,27 +20,19 @@ $('#nav .navbar-nav li>a').click(function(){
   $('body,html').animate({scrollTop:posi},700);
 });
 
-$(document).scroll(function() {
-  
-  if ($(this).scrollTop() >= 100) {
-    
-    $(".logo").html("<img src='img/fatbraintoco.png'>");
-	} else {
-    
-    $(".logo").html("<img src='img/fatbraintoco.png'>");
-  }
-	
-});
+/* CHANGE NAV CLASS */
 
-/* add logo affix */
-/*$(window).scroll(function(){
-   var height = $(this).scrollTop();
-    if (height > 100){
-         $('#brand').show();   
-    }
-    else {
-      $('#brand').hide();   
-    }
+$(function() {
+    var header = $(".nav-logo-lg");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 200) {
+            header.removeClass('nav-logo-lg').addClass("nav-logo-sm");
+        } else {
+            header.removeClass("nav-logo-sm").addClass('nav-logo-lg');
+        }
+    });
 });
 
 /* carousel */

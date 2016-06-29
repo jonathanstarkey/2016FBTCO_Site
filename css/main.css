@@ -22,6 +22,11 @@ body {
     padding: 0 0 60px;
 }
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 
 /* Set the fixed height of the footer here */
 
@@ -59,10 +64,19 @@ header {
 .navbar-brand {
   padding: 0px;
 }
+
 .navbar-brand>img {
-  height: 300%;
-  padding: 15px;
+  height: 160%;
+margin-top: 4px;
   width: auto;
+}
+
+.nav-logo-lg {
+    height: 5em;
+}
+
+.nav-logo-sm {
+    height: 2.88em;
 }
 
 #topNav {
@@ -78,21 +92,36 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 100px;
-    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-;
+    height: 10em;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.8+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    ;
     border: 0;
 }
 
 #nav.affix {
     position: fixed;
-    top: 0;
     z-index: 1000;
+    top: 0;
+    height: 90px;
+    
+    background: rgba(0, 0, 0, 0.8);
     -webkit-transition: all .3s ease-in-out;
+}
+
+
+
+.navbarskinny, .navbarfat {
+    padding-top: 1.1em;
+    
+    font-size: 1.2em;
+}
+
+.account-btn {
+    margin-top: 8px;
 }
 
 /*
@@ -101,24 +130,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 */
 
-.logo img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  vertical-align:middle;
-  height: auto;
-  width: 150px;
 }
 
-.logo-2 {
-    
-}
-
+/*
 .brand {
     display: none;
     height: 50px;
     width: 60px;
     background: url(http://placehold.it/100x50) no-repeat left center;
 }
+*/
 
 #footer > .container {}
 
@@ -131,6 +152,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 .navbar-nav {
     margin: 1px 1px;
 }
+
+
 
 .navbar-toggle {
     outline: 0;
@@ -145,10 +168,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 /*
-@media (max-width: 768px) {
-    header {}
+@media (max-width: 1199px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 */
+
 
 .scroll-top {
     position: fixed;
@@ -196,6 +243,140 @@ section {
 }
 
 .overlay h1{
-    font-size: 4em!important;
+    font-size: 7em!important;
     font-weight:800;
+    line-height: 1.2em;
+    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password], input[type=email] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #f24c22;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #e03a19;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 766px) {
+    .nav-logo-lg {
+        margin-left: 10px;
+        height: 2em;}
+.collapsing, .in {background-color: rgba(0,0,0,0.8);}
+
+}
+
+
+.btn {
+    letter-spacing: 1px;    
+    border-radius:0;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-danger {
+    background: #f24c22;
+    color: #ffffff;
+}
+ 
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger {
+    background: #e03a19;
+}
+ 
+.btn-danger:active, .btn-danger.active {
+    background: #d83919;
+    box-shadow: none;
+}
+
+.glyphicon-earphone {
+    font-size: .9em;
 }
