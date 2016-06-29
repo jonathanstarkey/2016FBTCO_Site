@@ -1,129 +1,201 @@
 html,
 body {
-  height: 100%;
-  padding-top:50px;
+    height: 100%;
+    padding-top: 50px;
 }
 
 .row {
-  margin-left:0px;
-  margin-right:0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+
 
 /* Wrapper for page content to push down footer */
+
 #wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
+
 /* Set the fixed height of the footer here */
+
+/*
 #footer {
-  height: 60px;
-  background-color: #f5f5f5;
-  margin-top:50px;
-  padding-top:20px;
-  padding-bottom:20px;
+    height: 60px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header {
-  	height:100%;
-	min-height:500px;
+    height: 100%;
+    min-height: 500px;
 }
 
 #wrap > .container {
-  padding: 60px 15px 0;
+    padding: 60px 15px 0;
 }
+
 .container .credit {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 #footer {
-  background-color:#414141;
+    background-color: #414141;
 }
 
 #footer a {
-  color:#efefef;
+    color: #efefef;
+}
+*/
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 300%;
+  padding: 15px;
+  width: auto;
 }
 
 #topNav {
-	z-index:-1;
+    z-index: 999;
 }
 
 #nav {
-  width: 100%;
+    width: 100%;
 }
 
 #nav.affix-top {
-   position: absolute;
-   top:0;
-   left:0;
-   z-index:10;
-   height:54px;
-   background-color:transparent;
-   border:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+;
+    border: 0;
 }
 
 #nav.affix {
-   position: fixed;
-   top: 0;
-   z-index:10;
-   -webkit-transition: all .6s ease-in-out;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    -webkit-transition: all .3s ease-in-out;
 }
 
-#footer > .container {
-  
+/*
+.logo {
+  float: left;
 }
+*/
+
+.logo img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  vertical-align:middle;
+  height: auto;
+  width: 150px;
+}
+
+.logo-2 {
+    
+}
+
+.brand {
+    display: none;
+    height: 50px;
+    width: 60px;
+    background: url(http://placehold.it/100x50) no-repeat left center;
+}
+
+#footer > .container {}
 
 @media (min-width: 767px) {
-  .navbar-nav.nav-justified > li{
-      float:none;
-  }
+    .navbar-nav.nav-justified > li {
+        float: none;
+    }
 }
-  
+
 .navbar-nav {
-  margin: 1px 1px; 
-}  
+    margin: 1px 1px;
+}
 
 .navbar-toggle {
-	outline:0;
+    outline: 0;
 }
 
 .divider {
-	height:50px;
+    height: 50px;
 }
 
 .panel {
-	border-width:0;
+    border-width: 0;
 }
 
+/*
 @media (max-width: 768px) {
-	header {
-	
-	}
+    header {}
 }
+*/
 
 .scroll-top {
-   position:fixed;
-   bottom:0;
-   right:6%;
-   z-index:100;
-   background: #f2f3f2;
-   font-size:24px;
-   border-top-left-radius:3px;
-   border-top-right-radius:3px;
+    position: fixed;
+    bottom: 0;
+    right: 6%;
+    z-index: 100;
+    background: #f2f3f2;
+    font-size: 24px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
-.scroll-top a:link,.scroll-top a:visited {
-  color:#222;
-} 
- 
+
+.scroll-top a:link,
+.scroll-top a:visited {
+    color: #222;
+}
+
 section {
-  color: #ffffff;
-  min-height: 400px;
-  height: auto !important;
-  height: 100%;
-  padding-top:100px;
+    color: #ffffff;
+    min-height: 400px;
+    height: auto !important;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel {
+    margin-top: -8em;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 12;
+    top: 40%;
+    left: 10%;
+    width: 100%;
+    
+    text-align: left;
+    color: #fff;
+}
+
+.overlay h1{
+    font-size: 4em!important;
+    font-weight:800;
 }

@@ -1,6 +1,6 @@
 $('#nav').affix({
       offset: {
-        top: $('header').height()-$('#nav').height()
+        top: $('.overlay').height()-$('#nav').height()
       }
 });	
 
@@ -19,5 +19,53 @@ $('#nav .navbar-nav li>a').click(function(){
   $('body,html').animate({scrollTop:posi},700);
 });
 
+$(document).scroll(function() {
+  
+  if ($(this).scrollTop() >= 100) {
+    
+    $(".logo").html("<img src='img/fatbraintoco.png'>");
+	} else {
+    
+    $(".logo").html("<img src='img/fatbraintoco.png'>");
+  }
+	
+});
 
+/* add logo affix */
+/*$(window).scroll(function(){
+   var height = $(this).scrollTop();
+    if (height > 100){
+         $('#brand').show();   
+    }
+    else {
+      $('#brand').hide();   
+    }
+});
+
+/* carousel */
+$('.carousel').carousel({
+  interval: 6000,
+  pause: "false"
+});
+
+var $item = $('.carousel .item');
+var $wHeight = $(window).height();
+
+$item.height($wHeight); 
+$item.addClass('full-screen');
+
+$('.carousel img').each(function() {
+  var $src = $(this).attr('src');
+  var $color = $(this).attr('data-color');
+  $(this).parent().css({
+    'background-image' : 'url(' + $src + ')',
+    'background-color' : $color
+  });
+  $(this).remove();
+});
+
+$(window).on('resize', function (){
+  $wHeight = $(window).height();
+  $item.height($wHeight);
+});
 
