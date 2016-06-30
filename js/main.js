@@ -61,4 +61,3 @@ $(window).on('resize', function (){
   $wHeight = $(window).height();
   $item.height($wHeight);
 });
-

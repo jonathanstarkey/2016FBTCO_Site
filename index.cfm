@@ -58,16 +58,6 @@
   </div>
 
   <!-- Controls -->
-<!--
-  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
--->
 </div>
     
 <!-- Fly-in navbar -->
@@ -83,20 +73,29 @@
           <a class="navbar-brand nav-logo-lg nav-logo-sm" href="##"><img src="img/fatbraintoco.png" alt="">
         </a>
       </div>
-      <div class="collapse navbar-collapse" >
+      <div class="collapse  navbar-collapse" >
         <ul class="nav navbar-nav navbarskinny navbar-right">
           <li><a href="#">Home</a></li>
-          <li><a href="#section2">Product Catalog</a></li>
-          <li><a href="#section3">Purchase</a></li>
-          <li><a href="#section4">Media</a></li>
-          <li><a href="#section5">About Us</a></li>
-            <li><a href="#section5">Contact</a></li>
+          <li><a href="#section">Product Catalog</a></li>
+          <li class="dropdown"><a href="section1" class="dropdown-toggle" data-toggle="dropdown">Purchase <span class="caret"></span>
+              <ul class="dropdown-menu dropdown-menu-left">
+                
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li> 
+                    
+                </ul></a>
+            
+            </li>
+          <li><a href="#section">Media</a></li>
+          <li><a href="#section">About Us</a></li>
+            <li><a href="#section">Contact</a></li>
             <li>
   <button type="button" class="btn class account-btn btn-danger" data-toggle="modal" data-target="#myModal">
       Account Login</button>
                 
  </li>
-            <li><a href="#section5"><span class="glyphicon glyphicon-earphone"></span> 800.335.5621</a></li>
+            <li><a href="#section"><span class="glyphicon glyphicon-earphone"></span> 800.335.5621</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container -->

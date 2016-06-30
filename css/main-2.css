@@ -78,7 +78,9 @@ header {
     height: 5em;
 }
 
-
+.nav-logo-sm {
+    height: 2.88em;
+}
 
 #topNav {
     z-index: 999;
@@ -125,7 +127,22 @@ header {
     margin-top: 8px;
 }
 
+/*
+.logo {
+  float: left;
+}
+*/
 
+}
+
+/*
+.brand {
+    display: none;
+    height: 50px;
+    width: 60px;
+    background: url(http://placehold.it/100x50) no-repeat left center;
+}
+*/
 
 #footer > .container {}
 
@@ -419,9 +436,3 @@ section {
 .glyphicon-earphone {
     font-size: .9em;
 }
-
-
-/*
-.nav > li.dropdown.open { position: static; }
-.nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
-.dropdown-menu>li { display: table-cell; }*/

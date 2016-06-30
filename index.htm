@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Fat Brain Toy Co. | Fat Brain Toy Co.</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +43,18 @@
       </div>
     </div>
     <div class="item">
-      <img src="img/IMG_6017.jpg" data-color="firebrick" alt="Second Image">
+      <img src="img/_MG_4538.jpg" data-color="firebrick" alt="Second Image">
       <div class="carousel-caption">
 <!--        <h3>Second Image</h3>-->
       </div>
     </div>
     <!-- more slides here -->
+      <div class="item">
+      <img src="img/_MG_4707.jpg" data-color="firebrick" alt="Second Image">
+      <div class="carousel-caption">
+<!--        <h3>Second Image</h3>-->
+      </div>
+    </div>
   </div>
 
   <!-- Controls -->
@@ -66,7 +72,7 @@
     
 <!-- Fly-in navbar -->
 <div class="navbar navbar-inverse navbar-static-top" id="nav">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -74,12 +80,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-<!--          <a class="navbar-brand" href="##"><img src="img/fatbraintoco.png" alt="">-->
-          <div class="logo"><img src='img/fatbraintoco.png'></div>
+          <a class="navbar-brand nav-logo-lg nav-logo-sm" href="##"><img src="img/fatbraintoco.png" alt="">
         </a>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse" >
+        <ul class="nav navbar-nav navbarskinny navbar-right">
           <li><a href="#">Home</a></li>
           <li><a href="#section2">Product Catalog</a></li>
           <li><a href="#section3">Purchase</a></li>
@@ -87,14 +92,75 @@
           <li><a href="#section5">About Us</a></li>
             <li><a href="#section5">Contact</a></li>
             <li>
-  <button type="button" class="btn btn-default">
+  <button type="button" class="btn class account-btn btn-danger" data-toggle="modal" data-target="#myModal">
       Account Login</button>
+                
  </li>
-            <li><a href="#section5">800.335.5621</a></li>
+            <li><a href="#section5"><span class="glyphicon glyphicon-earphone"></span> 800.335.5621</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container -->
 </div><!--/.navbar -->
+
+<!-- Modal - Account Login -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="loginmodal-container">
+					<h1>Account Login</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+					
+				  <div class="login-help">
+					<a data-toggle="modal" href="#myModal-newaccount">Create Account?</a> - <a data-toggle="modal" href="#myModal-forgotpassword">Forgot Password</a>
+				  </div>
+				</div>
+
+  </div>
+</div>
+    
+<!-- Modal - New Account -->
+<div id="myModal-newaccount" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="loginmodal-container">
+					<h1>Create New Account</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
+				  </form>
+				</div>
+
+  </div>
+</div>
+
+<!-- Modal - Forgot Pasword -->
+<div id="myModal-forgotpassword" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+<!-- Modal content-->
+    <div class="loginmodal-container">
+					<h1>Forgot Password</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="email" name="pass" placeholder="Email">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Send">
+				  </form>
+					
+				  <div class="login-help">
+					<a href="#">Create Account?</a>
+				  </div>
+				</div>
+
+  </div>
+</div>
+
   
 <!-- Begin page content -->
 <div class="divider" id="section1"></div>
@@ -350,7 +416,6 @@
    </div>
   </div>
 </div>
-
 
 
 
