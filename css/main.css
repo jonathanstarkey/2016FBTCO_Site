@@ -194,7 +194,7 @@ header {
             display: none!important;  
         }
         
-    .container-fluid>.navbar-collapse {
+    .container>.navbar-collapse {
         margin-right: -15px;
     margin-left: -15px;
         padding-right: 15px;
@@ -421,6 +421,62 @@ section {
 }
 
 
+.dropdown-menu {
+     width: 500px;
+  left: 50%;
+  right: auto;
+    background-color: rgba(242,76,34,0.7);
+/*        background-color: #f24c22;*/ 
+    
+  text-align: center;
+  transform: translate(-38%, 0);
+}
+
+.navbar-toggle {
+    top: 20px;
+}
+
+.navbar-toggle:before {
+    content:"Menu";
+    left:-50px;
+    top:4px;
+    position:absolute;
+    width:50px;
+    Color: #ffffff;
+}
+
+.navbar-inverse .navbar-toggle {
+    /* padding-top: 10px; */
+    background-color: #f24c22;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
+
+.navbar-inverse .navbar-toggle:active {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
+
+.navbar-inverse .navbar-toggle:visited {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
+
+/*-- change navbar dropdown color --*/
+.dropdown-menu li a {
+    padding-left:10px;
+    padding-right:10px;
+    color:#ffffff;
+  }
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
 /*
 .nav > li.dropdown.open { position: static; }
 .nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
