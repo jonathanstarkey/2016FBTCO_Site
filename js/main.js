@@ -20,6 +20,26 @@ $('#nav .navbar-nav li>a').click(function(){
   $('body,html').animate({scrollTop:posi},700);
 });
 
+ /* ensure the affix element maintains it width */
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+   
+function affixWidth() {
+    var affix = $('#nav');
+    var width = affix.width();
+    affix.width(width);
+}
+
+$(document).ready(function () {
+
+    affixWidth();
+
+});
+}
+
+
+
+
+
 /* CHANGE NAV CLASS */
 
 $(function() {
@@ -61,11 +81,3 @@ $(window).on('resize', function (){
   $wHeight = $(window).height();
   $item.height($wHeight);
 });
-
-/* Dropdown Hover */
-
-//		$('.navbar .dropdown').hover(function() {
-//		  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-//		}, function() {
-//		  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-//		});
