@@ -36,10 +36,6 @@ $(document).ready(function () {
 });
 }
 
-
-
-
-
 /* CHANGE NAV CLASS */
 
 $(function() {
@@ -100,8 +96,5 @@ $(document).ready(function(){
         $("#meetFatBrainVideo").attr('src', url);
     });
 });
-
-
-/* HOMEPAGE VIDEO RESPONSIVE * /
 
 
