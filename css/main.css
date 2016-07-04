@@ -170,7 +170,7 @@ section {
 }
 
 
-.dropdown-menu {
+.header-dropdown-menu {
      width: 500px;
   left: 50%;
   right: auto;
@@ -181,22 +181,18 @@ section {
 }
 
 /*-- change navbar dropdown color --*/
-.dropdown-menu li a {
+.header-dropdown-menu li a {
     background-color: #f24c22;
     padding-left:10px;
     padding-right:10px;
     color:#ffffff;
   }
 
-/*
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
- }
-*/
+
 
 /*---------- /NAV BAR ----------*/
 
+/*--------- HOMEPAGE  ---------*/
 /*--------- HEADER ---------*/
 
 .full-screen {
@@ -241,7 +237,140 @@ section {
 
 /*--------- /HEADER ---------*/
 
+/*--------- MEET FAT BRAIN TOYS ---------*/
+.meet-fat-brain-container {
+    position: relative;
+}
+
+.meet-fat-brain-heading {
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    
+    color: #0199a7;
+    
+}
+
+.play-icon {
+    position: absolute
+}
+.play-icon {
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 3
+}
+
+
+.video-play-button {
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid #ffffff;
+    display: inline-block;
+}
+
+.glyphicon-play:active,
+.glyphicon-play:hover,
+.glyphicon-play:focus {
+    background-color: rgba(0, 0, 0, .6);
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    outline-offset:0;
+}
+
+.glyphicon-play {
+    background: rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    padding: 35px;
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.video-modal-header {
+    border-bottom: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.close:hover {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.video-modal-content {
+    position: relative;
+    background-color: #000000;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0; 
+    border: 0; 
+    border-radius: 0; 
+    outline: 0;
+/*     -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5); */
+     box-shadow: 0; 
+}
+
+.modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+
+/*--------- /MEET FAT BRAIN TOYS ---------*/
+
+/*--------- /HOMEPAGE  ---------*/
+
 /*--------- FOOTER ---------*/
+.footer-div {
+    margin-top: 20px;
+}
+
+.footer-list-label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.375em;
+    font-weight: 700;
+    
+    color: #000000;
+}
+
+.footer-list-item li a,
+.footer-list-item-li,
+.footer-list-item-p{
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.375em;
+    font-weight: 400;
+    
+    line-height: 1.25em;
+    
+    color: #000000;
+}
+
+.footer-list-item li a:hover {
+    color: #58585b;
+}
 
 .scroll-top {
     display:none;
@@ -382,7 +511,7 @@ section {
     border: 0;   
     }
     
-    .navbar-nav .open .dropdown-menu {
+    .navbar-nav .open .header-dropdown-menu {
             position: static;
             float: none;
             width: auto;
@@ -392,14 +521,14 @@ section {
             -webkit-box-shadow: none;
             box-shadow: none;
         }
-        .navbar-nav .open .dropdown-menu > li > a {
+        .navbar-nav .open .header-dropdown-menu > li > a {
             line-height: 20px;
         }
-        .navbar-nav .open .dropdown-menu > li > a,
-        .navbar-nav .open .dropdown-menu .dropdown-header {
+        .navbar-nav .open .header-dropdown-menu > li > a,
+        .navbar-nav .open .header-dropdown-menu .dropdown-header {
             padding: 5px 15px 5px 25px;
         }
-        .dropdown-menu > li > a {
+        .header-dropdown-menu > li > a {
             display: block;
             padding: 3px 20px;
             clear: both;
@@ -515,7 +644,7 @@ section {
 }
 
  @media screen and (min-width: 1199px) {
-        .dropdown:hover .dropdown-menu {
+        .dropdown:hover .header-dropdown-menu {
            max-width: $painting-zoom-size;
           max-height: $painting-zoom-size;
         }

@@ -81,3 +81,27 @@ $(window).on('resize', function (){
   $wHeight = $(window).height();
   $item.height($wHeight);
 });
+
+/* HOMEPAGE VIDEO STOP PLAYING WHEN CLOSED*/
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#meetFatBrainVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#meet-fat-brain-play-button").on('hide.bs.modal', function(){
+        $("#meetFatBrainVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#meet-fat-brain-play-button").on('show.bs.modal', function(){
+        $("#meetFatBrainVideo").attr('src', url);
+    });
+});
+
+
+/* HOMEPAGE VIDEO RESPONSIVE * /
+
+
