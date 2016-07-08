@@ -12,11 +12,9 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS   -->
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
     
@@ -86,27 +84,46 @@
 
 
 <!-- SECONDARY HEADER -->
+<!--
 <header class="container  secondary-header" id="scene">
         <div class="bg"></div>
+   
 <div class="jumbotron affix">
-  <h1>Bootstrap Jumbotron</h1>
-  <p class="lead">+ Parallax Effect using jQuery</p>
+     <div class="container overlay-secondary"><h1 class="overlay-secondary-h1">Toys</h1></div>
 </div>
     </header>
+-->
+    
+<!-- REQUEST OUR LATEST CATALOG -->
+    <section class="secondary-header-2" id="">
+        <div class="container-fluid fixed-bg-img-toys">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-right">          
+                    <h2 class="secondary-header-title">Toys</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- /REQUEST OUR LATEST CATALOG -->
     
 <!-- /SECONDARY HEADER -->
+    
+
     
 <!-- Page Content -->
     
     <div class="container-fluid" id="main">
          <div class="row">
-             <div class="container">
+             <div class="container product-container">
         <!-- Title -->
+<!--
         <div class="row">
             <div class="col-lg-12">
-                <h3>Latest Features</h3>
+                <h3>Toys</h3>
             </div>
         </div>
+-->
         <!-- /.row -->
 
         <!-- Page Features -->
@@ -114,160 +131,148 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="http://placehold.it/800x800" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
+            
           
         </div>
         </div>
@@ -276,41 +281,47 @@
 
     </div>
     <!-- /.container -->
-    <!-- RECENT AWARDS -->
-    <section class="awards-section" id="">
+    <!-- EXPLORE MORE -->
+    <section class="explore-section content-section-a" id="">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="awards-header">Recent Awards</h2>
+                <div class="col-lg-12 text-center">
+                    <h2 class="explore-header">EXPLORE PRODUCT CATALOG</h2>
+                     
                 </div>
             </div>
             <div class="row">
-                    <div class="col-xs-4 awards-wrapper">
-                        <div>
-                            <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
-                            <div class="caption text-center">
-                                <h2 class="awards-label">Heading</h2>
+                    <div class="col-md-4 awards-wrapper text-center">
+                            <h2 class="explore-label">Games</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
-                        </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Education Games  &nbsp;&rsaquo;</button>
                     </div>
-                    <div class="col-xs-4 awards-wrapper">
-                        <div>
-                            <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
-                            <div class="caption text-center">
-                                <h2 class="awards-label">Heading</h2>
+                    <div class="col-md-4 awards-wrapper text-center">
+                            <h2 class="explore-label">Brain Teasers</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
-                        </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Brain Teasers  &nbsp;&rsaquo;</button>
                     </div>
-                    <div class="col-xs-4 awards-wrapper">
-                            <img src="http://placehold.it/140x140" class="img-responsive center-block img-circle" alt="Responsive image">
-                            <div class="caption text-center">
-                                <h2 class="awards-label">Heading</h2>
+                    <div class="col-md-4 awards-wrapper text-center">
+                            <h2 class="explore-label">Education</h2>
+                            <div>
+                                <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Education  &nbsp;&rsaquo;</button>
                     </div>
                 </div>
         </div>
     </section>
-<!-- /RECENT AWARDS -->
+<!-- /EXPLORE MORE -->
   
 </div><!--/container-->
   
