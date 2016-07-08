@@ -12,11 +12,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS   -->
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/landing-page.css" rel="stylesheet">
+<!--    <link href="css/landing-page.css" rel="stylesheet">-->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
     
@@ -54,7 +53,7 @@
           <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
               <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
                 <ul class="list-inline">
-                    <li><a href="/product_catalog/toys">Toys</a></li>
+                    <li><a href="/product_catalog/toys.cfm">Toys</a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Brain Teasers</a></li> 
                     <li><a href="#">Education</a></li>
