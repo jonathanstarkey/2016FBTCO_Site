@@ -576,7 +576,7 @@ min-height: 400px;
     
     margin-top: -100px;
     
-    min-height: 500px;
+    min-height: 420px;
     height: auto !important;
     height: 100%;
 }
@@ -588,7 +588,7 @@ min-height: 400px;
 .secondary-header-title {
     position: absolute;
     max-width: 1200px;
-    margin-top: 225px;
+    margin-top: 190px;
     right: 10%;
     
     color: #ffffff;
@@ -600,18 +600,20 @@ min-height: 400px;
 }
 
 .fixed-bg-img-toys {
-min-height: 500px;
-    
+min-height: 420px;
+  margin-top: -100px;  
   padding: 0px;
   margin-bottom: 0px;
   color: inherit;
-  background: url(/img/coggyboy.jpg) no-repeat center center fixed; 
+  background: url(/img/bg_squigz.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+    
+    background-position: 0 -650px;
 }
+
 
 #main {
   position:relative;
@@ -714,6 +716,76 @@ min-height: 500px;
 /*--------- PRODUCT CATALOG ---------*/
 
 
+/*--------- ABOUT US PAGE ---------*/
+
+.about-us-heading {
+    margin-top: 0;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4.5em;
+    font-weight: 900;
+    
+    color: #0199a7;
+}
+
+.about-us-img {
+    padding-top: 50px;
+}
+
+.our-leadership-heading {
+    margin-top: 0px;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4.5em;
+    font-weight: 900;
+    
+    color: #a1CB3a;
+    
+}
+
+.leadership-wrap {
+    margin-top: 20px;
+}
+
+.leadership-thumbnail {
+    border: 0;
+}
+
+.leadership-thumbnail>img {
+    max-width: 70%;
+}
+
+.leadership-label {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+    font-size: 2em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    
+    color: #e27225;
+}
+
+.leadership-title {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+}
+
+.title-email {
+    margin-top: 0;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.125em;
+    font-weight: 400;
+    
+    color: #0199a7;
+    
+}
+
+/*--------- /LEADERSHIP PAGE ---------*/
 
 /*--------- /SECONDARY PAGES  ---------*/
 

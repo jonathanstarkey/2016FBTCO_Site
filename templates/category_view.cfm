@@ -30,7 +30,7 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <a href="#prod_page#"><cfif fileexists('#root_path#\fatbraintoys\wholesale\images\products\#parent_sku#\button.jpg')><img src="/images/products/#parent_sku#/button.jpg" alt="" border="0"><cfelse><img src="/images/coming_soon.gif" width="250" height="250" alt="Coming Soon"></cfif></a>
+                    <a href="#prod_page#"><cfif fileexists('#root_path#\fatbraintoys\wholesale\img\products\#parent_sku#\button.jpg')><img src="/images/products/#parent_sku#/button.jpg" alt="" border="0"><cfelse><img src="/images/coming_soon.gif" width="250" height="250" alt="Coming Soon"></cfif></a>
                     
                     <div class="caption">
                         <h3>Feature Label</h3>

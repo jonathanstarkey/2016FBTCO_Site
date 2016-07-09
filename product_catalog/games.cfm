@@ -36,21 +36,18 @@
 <cfinclude template="/fatbraintoys/wholesale/templates/secondary_header.cfm">
 
     
-<!-- REQUEST OUR LATEST CATALOG -->
+<!-- SECONDARY HERO -->
     <section class="secondary-header-2" id="">
         <div class="container-fluid fixed-bg-img-toys">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-right">          
-                    <h2 class="secondary-header-title">Toys</h2>
+                    <h2 class="secondary-header-title">Games</h2>
                 </div>
             </div>
         </div>
     </section>
     
-<!-- /REQUEST OUR LATEST CATALOG -->
-    
-<!-- /SECONDARY HEADER -->
-    
+<!-- /SECONDARY HERO -->    
 
     
 <!-- Page Content -->
