@@ -52,14 +52,203 @@
     
 <!-- Page Content -->
     
-    <div class="container-fluid" id="main">
-         <div class="row">
-             
+    <!--  FAT BRAIN TOY CO PRESS KIT -->
+    <div class="content-section-a">
 
-       
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="section-heading in-the-press-heading">Fat Brain Toy Co.<br>Press Kit</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis eros. Nunc at erat diam. Cras fermentum elit et sem tempor tempus. Nunc at erat diam. Cras fermentum elit et sem tempor tempus. </p>
+                    
+                    <button type="button" class="center-block press-kit-button btn btn-round-lg btn-lg">Download Current Press Kit  &nbsp;&rsaquo;</button>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                    <img class="img-responsive" src="http://placehold.it/900x700" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+<!--  / FAT BRAIN TOY CO PRESS KIT -->
+    
+    
+<!-- IN THE PRESS HEADER -->
+    <section class="in-the-press-section content-section-a" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="in-the-press-header-2">In the Press</h2>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- /IN THE PRESS HEADER -->
+    
+<!-- ARTICLE SECTION -->
+    <div class="content-section-a news-container">
+        <div class="container">
+            <div class="row">
+                <div col-md-3 >
+                    <h3 class="latest-news col-lg-offset-1">Latest Fat Brain Toy Co. News</h3>
+                </div>
+                <ul class="thumbnails col-md-12">
+                    <a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source ">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a><a href="##" class="col-md-3 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                            <div class="caption">
+                                 <h3 class="article-title">Fat Brain Toys Partners with Winona Capital to Fuel Future Growth</h3>
+                                <span class="article-source">Fat Brain Toys</span><span class="pull-right  article-time">1yr</span>
+                            </div>
+                        </div>
+                    </a>
+                   
+                    
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+<!-- /ARTICLE SECTION -->
+    
+ <!-- EXPLORE MORE -->
+    <section class="explore-section content-section-a" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="explore-header">EXPLORE PRODUCT CATALOG</h2>
+                     
+                </div>
+            </div>
+            <div class="row">
+                    <a href="/product_catalog/toys.cfm" class="col-md-3 awards-wrapper text-center">
+                            <h2 class="explore-label">Toys</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Toys  &nbsp;&rsaquo;</button>
+                    </a>
+                    <a href="/product_catalog/games.cfm" class="col-md-3 awards-wrapper text-center">
+                            <h2 class="explore-label">Games</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Games  &nbsp;&rsaquo;</button>
+                    </a>
+                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-3 awards-wrapper text-center">
+                            <h2 class="explore-label">Brain Teasers</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Brain Teasers  &nbsp;&rsaquo;</button>
+                    </a>
+                    <a href="/product_catalog/education.cfm" class="col-md-3 awards-wrapper text-center">
+                            <h2 class="explore-label">Education</h2>
+                            <div>
+                                <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Education  &nbsp;&rsaquo;</button>
+                    </a>
+                </div>
         </div>
     </section>
 <!-- /EXPLORE MORE -->
+  
   
 </div><!--/container-->
   

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Fat Brain Toy Co. | Fat Brain Toy Co.</title>
 
@@ -39,6 +40,7 @@
 <!-- Begin page content -->
 
 <div class="overlay"><h1>Toys that<br>matter to<br>their gray<br>matter.</h1></div>
+<a href="#scroll-down"><img src="/img/scroll_down.png" width="55" height="auto" class="scroll-down-arrow img-responsive"></a>
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -67,7 +69,7 @@
    
 
 <!--  MEET FAT BRAIN TOY CO -->
-    <div class="content-section-a">
+    <div class="content-section-a" id="scroll-down">
 
         <div class="container meet-fat-brain-container">
             <div class="row">
@@ -89,21 +91,24 @@
 
 <!--  /MEET FAT BRAIN TOY CO -->
     
-<!-- REQUEST OUR LATEST CATALOG -->
-    <section class="request-catalog-section" id="">
-        <div class="container-fluid fixed-bg-img">
+<!-- PRODUCT CATALOG CATALOG PARALLAX -->
+    <section class="product-catalog-parallax-section" id="">
+        <div class="container-fluid fixed-bg-img-2">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="request-catalog-btn btn btn-default btn-xl">                    
-                    <h2 class="request-catalog-btn-header">Request our latest catalog.</h2>
-                    <p class="request-catalog-btn-p">(Download PDF version)</p>
-                     </a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">                    
+                            <h2 class="product-catalog-parallax-header">Product Catalog</h2>
+                             <img src="/img/chevron_down.png" width="60" height="auto" class="col-md-1 col-md-offset-1 img-responsive">
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-<!-- /REQUEST OUR LATEST CATALOG -->
+<!-- /PRODUCT CATALOG CATALOG PARALLAX -->
     
 <!-- SPLIT SECTION 1 -->
 <div class="content-section-a split-container-orange">
@@ -126,6 +131,11 @@
 
     </div>
 <!-- /SPLIT SECTION 1 -->
+        
+ <div class="container split-rule">
+        <hr>
+</div>          
+        
 <!-- SPLIT SECTION 2 -->
 <div class="content-section-a split-container-red">
     <div class="container">
@@ -146,6 +156,11 @@
 
     </div>
 <!-- /SPLIT SECTION 2 -->
+        
+ <div class="container split-rule">
+        <hr>
+</div>          
+        
 <!-- SPLIT SECTION 3 -->
 <div class="content-section-a split-container-blue">
 
@@ -167,6 +182,11 @@
 
     </div>
 <!-- /SPLIT SECTION 3 -->
+        
+<div class="container split-rule">
+        <hr>
+</div>        
+        
 <!-- SPLIT SECTION 4 -->
 <div class="content-section-a split-container-yellow">
     <div class="container">
@@ -254,6 +274,64 @@
     </section>
     
 <!-- /REQUEST OUR LATEST CATALOG -->
+        
+<!-- UPCOMING TRADE SHOWS -->
+    <section class="tradeshow-content-section content-section-a" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="col-md-10 tradeshow-content-header">Find Fat Brain Toy Co. at these upcoming trade shows:</h2>
+                     
+                </div>
+                <div class="col-md-4 ">
+                    <div class="">
+                       <ul class="tradeshow-list">
+                           <li class="tradeshow-list-item">ABC Kids Expo</li>
+                            <li class="tradeshow-list-item">Las Vegas, NV</li>
+                            <li class="tradeshow-list-item">October 18th - 21st, 2015</li>
+                            <li class="tradeshow-list-item">Booth 5716</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container split-rule-white">
+                    <hr>
+                </div>  
+                
+                <div class="col-md-4 tradeshow-content-wrapper">
+                    <div class="tradeshow-content-spacer">
+                       <ul>
+                           <li class="tradeshow-list-item">Spielwarenmesse</li>
+                            <li class="tradeshow-list-item">International Toy Fair</li>
+                            <li class="tradeshow-list-item">Nuremberg, Germany</li>
+                            <li class="tradeshow-list-item">January 27th - February 1st, 2016</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container split-rule-white">
+                    <hr>
+                </div>  
+                
+                <div class="col-md-4 tradeshow-content-wrapper">
+                    <div class="tradeshow-content-spacer">
+                       <ul>
+                           <li class="tradeshow-list-item">American International Toy Fair</li>
+                            <li class="tradeshow-list-item">New York, NY</li>
+                            <li class="tradeshow-list-item">February 13th - 16st, 2016</li>
+                            <li class="tradeshow-list-item">Booth 5669</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </section>
+<!-- /UPCOMING TRADE SHOWS -->
   
 </div><!--/container-->
   
@@ -292,6 +370,35 @@
 <!--<script type="text/javascript" src="js/jquery.stellar.min.js"></script>-->
 <script type="text/javascript"  src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript">
+/* SMOOTH SCROLLING */
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 
 </body>
 

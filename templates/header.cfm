@@ -50,7 +50,7 @@
       <div class="collapse  navbar-collapse" >
         <ul class="nav navbar-nav navbarskinny navbar-right">
           <li><a href="/index.cfm">Home</a></li>
-          <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
+          <li class="dropdown nav-hover"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
               <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
                 <ul class="list-inline">
                     <li><a href="/product_catalog/toys.cfm">Toys</a></li>

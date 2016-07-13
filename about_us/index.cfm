@@ -227,25 +227,67 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis eros
 
 <!--  /OUR LEADERSHIP -->
     
-    <div class="container-fluid" id="main">
-         <div class="row">
-             
-
-       
+<!-- UPCOMING TRADE SHOWS -->
+    <section class="tradeshow-content-section content-section-a" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="col-md-10 tradeshow-content-header">Find Fat Brain Toy Co. at these upcoming trade shows:</h2>
+                     
+                </div>
+                <div class="col-md-4 ">
+                    <div class="">
+                       <ul class="tradeshow-list">
+                           <li class="tradeshow-list-item">ABC Kids Expo</li>
+                            <li class="tradeshow-list-item">Las Vegas, NV</li>
+                            <li class="tradeshow-list-item">October 18th - 21st, 2015</li>
+                            <li class="tradeshow-list-item">Booth 5716</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container split-rule-white">
+                    <hr>
+                </div>  
+                
+                <div class="col-md-4 tradeshow-content-wrapper">
+                    <div class="tradeshow-content-spacer">
+                       <ul>
+                           <li class="tradeshow-list-item">Spielwarenmesse</li>
+                            <li class="tradeshow-list-item">International Toy Fair</li>
+                            <li class="tradeshow-list-item">Nuremberg, Germany</li>
+                            <li class="tradeshow-list-item">January 27th - February 1st, 2016</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container split-rule-white">
+                    <hr>
+                </div>  
+                
+                <div class="col-md-4 tradeshow-content-wrapper">
+                    <div class="tradeshow-content-spacer">
+                       <ul>
+                           <li class="tradeshow-list-item">American International Toy Fair</li>
+                            <li class="tradeshow-list-item">New York, NY</li>
+                            <li class="tradeshow-list-item">February 13th - 16st, 2016</li>
+                            <li class="tradeshow-list-item">Booth 5669</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                    
+                
+            </div>
         </div>
     </section>
-<!-- /EXPLORE MORE -->
+<!-- /UPCOMING TRADE SHOWS -->
   
 </div><!--/container-->
   
 </div><!--/wrap-->
-
-<!--  DIVIDER  -->
-    <div class="container">
-        <hr>
-    </div>
-    
-<!--  /DIVIDER  -->
     
 
 <cfinclude template="/fatbraintoys/wholesale/templates/footer.cfm">

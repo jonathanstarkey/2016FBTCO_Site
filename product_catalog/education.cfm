@@ -75,7 +75,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
@@ -196,22 +196,12 @@
                     <div class="caption">
                         <h3 class="product-catalog-label">Feature Label</h3>
                         <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="#" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
             
           
         </div>
@@ -231,16 +221,25 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col-md-4 awards-wrapper text-center">
+                    <a href="/product_catalog/toys.cfm" class="col-md-4 awards-wrapper text-center">
+                            <h2 class="explore-label">Toys</h2>
+                            <div>
+                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            </div>
+                            <div class="caption text-center">
+                            </div>
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Toys  &nbsp;&rsaquo;</button>
+                    </a>
+                    <a href="/product_catalog/games.cfm" class="col-md-4 awards-wrapper text-center">
                             <h2 class="explore-label">Games</h2>
                             <div>
                             <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
-                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Education Games  &nbsp;&rsaquo;</button>
-                    </div>
-                    <div class="col-md-4 awards-wrapper text-center">
+                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Games  &nbsp;&rsaquo;</button>
+                    </a>
+                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-4 awards-wrapper text-center">
                             <h2 class="explore-label">Brain Teasers</h2>
                             <div>
                             <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
@@ -248,16 +247,7 @@
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Brain Teasers  &nbsp;&rsaquo;</button>
-                    </div>
-                    <div class="col-md-4 awards-wrapper text-center">
-                            <h2 class="explore-label">Education</h2>
-                            <div>
-                                <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
-                            </div>
-                            <div class="caption text-center">
-                            </div>
-                            <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Education  &nbsp;&rsaquo;</button>
-                    </div>
+                    </a>
                 </div>
         </div>
     </section>
