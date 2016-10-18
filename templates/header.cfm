@@ -9,16 +9,17 @@
     <title>Fat Brain Toy Co. | Fat Brain Toy Co.</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS   -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 <!--    <link href="css/landing-page.css" rel="stylesheet">-->
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen">
+
     <script src="https://use.fontawesome.com/d0c538d1aa.js"></script>
 
 
@@ -44,34 +45,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand nav-logo-lg nav-logo-sm" href="/index.cfm"><img src="img/fatbraintoco.png" alt="">
+          <a class="navbar-brand nav-logo-lg" href="/index.cfm">
         </a>
       </div>
       <div class="collapse  navbar-collapse" >
         <ul class="nav navbar-nav navbarskinny navbar-right">
           <li><a href="/index.cfm">Home</a></li>
           <li class="dropdown nav-hover"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
-              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
-                <ul class="list-inline">
-                    <li><a href="/product_catalog/toys.cfm">Toys</a></li>
-                    <li><a href="/product_catalog/games.cfm">Games</a></li>
-                    <li><a href="/product_catalog/brain_teasers.cfm">Brain Teasers</a></li> 
-                    <li><a href="/product_catalog/education.cfm">Education</a></li>
-                  </ul>  
+              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-right">
+                
+                    <li><a href="../product_catalog/toys.cfm">Toys</a></li>
+                    <li><a href="../product_catalog/games.cfm">Games</a></li>
+                    <li><a href="../product_catalog/brain_teasers.cfm">Brain Teasers</a></li> 
+                    <li><a href="../product_catalog/education.cfm">Education</a></li>
                 </ul>
             </li>
-          <li><a href="#section">Purchase</a></li>
+          <li><a href="../purchase.cfm">Purchase</a></li>
           <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Media <span class="caret"></span></a>
-              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
-                <ul class="list-inline">
+             <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
+                
                     <li><a href="/media/in_the_press.cfm">In the Press</a></li>
                     <li><a href="/media/awards.cfm">Awards</a></li>
                     <li><a href="/media/product_images.cfm">Product Images</a></li> 
                   </ul>  
-                </ul>
+               
             </li>
-          <li><a href="/about_us/index.cfm">About Us</a></li>
-            <li><a href="/contact/index.cfm">Contact</a></li>
+          <li><a href="../about_us.cfm">About Us</a></li>
+            <li><a href="../contact.cfm">Contact</a></li>
             <li><button type="button" class="btn class account-btn btn-danger" data-toggle="modal" data-target="#account-login">
       Account Login</button>
             </li>
@@ -97,30 +97,14 @@
 				  </form>
 					
 				  <div class="login-help">
-					<a data-toggle="modal" href="#myModal-newaccount">Create Account?</a> - <a data-toggle="modal" href="#myModal-forgotpassword">Forgot Password</a>
+					<a data-toggle="modal" href="/purchase.cfm">Create Account?</a> - <a data-toggle="modal" data-dismiss="modal" href="#myModal-forgotpassword">Forgot Password</a>
 				  </div>
 				</div>
 
   </div>
 </div>
-    
-<!-- Modal - New Account -->
-<div id="myModal-newaccount" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
-      <!-- Modal content-->
-    <div class="loginmodal-container">
-					<h1>Create New Account</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
-				  </form>
-				</div>
-
-  </div>
-</div>
-
-<!-- Modal - Forgot Pasword -->
+<!-- /Modal - Account Login -->
+<!-- Modal - Forgot Password -->
 <div id="myModal-forgotpassword" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
 <!-- Modal content-->
@@ -128,24 +112,29 @@
         <h1>Forgot Password</h1><br>
           <form>
             <input type="text" name="user" placeholder="Username">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Next">
             <input type="email" name="pass" placeholder="Email">
-            <input type="submit" name="login" class="login loginmodal-submit" value="Send">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Next">
           </form>
 
-          <div class="login-help">
-            <a href="#">Create Account?</a>
-          </div>
       </div>
     </div>
 </div>
-    
-
+<!-- /Modal - Forgot Password -->   
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/parallax.min.js"></script>
+<!-- PRODUCT DISPLAY TOP - Product Page -->
+ <script src="/js/imagezoom.js" type="text/javascript"></script>
+<!-- FLEX SLIDER - PRODUCT DISPLAY TOP - Product Page -->
+<script defer src="/js/jquery.flexslider.js" type="text/javascript"></script>
+<!-- flexisel - bottom carousel - Product Page -->
+<script type="text/javascript" src="/js/jquery.flexisel.js"></script>
     
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script type="text/javascript"  src="js/bootstrap.min.js"></script>-->
-<!--<script type="text/javascript" src="js/main.js"></script>-->
+<script type="text/javascript"  src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 </body>
 

@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Fat Brain Toy Co. | Fat Brain Toy Co.</title>
-
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS   -->
-    <link href="/css/main.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
-    
-    <script src="https://use.fontawesome.com/d0c538d1aa.js"></script>
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
 <body>
 <!-- Wrap all page content here -->
 <div id="wrap">
      
 <cfinclude template="/fatbraintoys/wholesale/templates/secondary_header.cfm">
 
+<cfquery name="select_skus" datasource="#datasource#" dbtype="#dbtype#">
+select product_sku, product_name, prod_page, left(product_sku,5) as parent_sku
+from wholesale_skus
+where product_status != 'inactive'
+and categories LIKE '%education%'
+group by parent_sku
+order by product_name
+</cfquery>
     
 <!-- SECONDARY HERO -->
     <section class="secondary-header-2" id="">
-        <div class="container-fluid fixed-bg-img-toys">
+        <div class="container-fluid parallax-container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-right">          
-                    <h2 class="secondary-header-title">Education</h2>
+                <div class="parallax-window" data-parallax="scroll" data-image-src="/img/education_header.jpg">
+                    <div class="col-lg-8 col-lg-offset-2 text-right">          
+                    <h2 class="secondary-header-title">Educational Toys</h2>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     
-<!-- /SECONDARY HERO -->
-    
+<!-- /SECONDARY HERO -->     
 
     
 <!-- Page Content -->
@@ -67,143 +48,21 @@
         <!-- /.row -->
 
         <!-- Page Features -->
+         <!-- Page Features -->
         <div class="row text-center">
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
+			<cfoutput query="select_skus">
+           	<div class="col-md-3 col-sm-6 hero-feature">
+                <div class="product-page-thumbnail thumbnail" style="">
+                    <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img src="https://www.fatbraintoyco.com/images/products/#parent_sku#/button.jpg"></a>
+                    <div class="caption product-caption" style="">
+                        <h3 class="product-catalog-label">#product_name#</h3>
+                         <div >
+                            <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="/img/acuity.jpg" alt="">
-                    <div class="caption">
-                        <h3 class="product-catalog-label">Feature Label</h3>
-                        <p>
-                            <a href="/product_catalog/product_page.cfm" class="btn btn-danger info-btn "><span class="glyphicon glyphicon-search"></span> Info</a> <a href="/product_catalog/product_page.cfm#where-to-buy-squigz" class="btn btn-default where-to-buy-btn">$&nbsp; Where To Buy</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            
-          
+            </cfoutput>
         </div>
         </div>
         </div>
@@ -221,28 +80,28 @@
                 </div>
             </div>
             <div class="row">
-                    <a href="/product_catalog/toys.cfm" class="col-md-4 awards-wrapper text-center">
+                    <a href="/product_catalog/toys.cfm" class="col-md-4 col-sm-6 awards-wrapper text-center">
                             <h2 class="explore-label">Toys</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/toys.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Toys  &nbsp;&rsaquo;</button>
                     </a>
-                    <a href="/product_catalog/games.cfm" class="col-md-4 awards-wrapper text-center">
+                    <a href="/product_catalog/games.cfm" class="col-md-4 col-sm-6 awards-wrapper text-center">
                             <h2 class="explore-label">Games</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/games.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Games  &nbsp;&rsaquo;</button>
                     </a>
-                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-4 awards-wrapper text-center">
+                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-4 col-sm-12 awards-wrapper text-center">
                             <h2 class="explore-label">Brain Teasers</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/brainteasers.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
@@ -252,7 +111,7 @@
         </div>
     </section>
 <!-- /EXPLORE MORE -->
-  
+    
 </div><!--/container-->
   
 </div><!--/wrap-->
@@ -262,7 +121,6 @@
 
     
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
 
 </body>
 

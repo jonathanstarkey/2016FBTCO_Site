@@ -36,22 +36,26 @@ $(document).ready(function () {
 });
 }
 
-/* CHANGE NAV CLASS */
+$(function() { var logo = $(".nav-logo-lg"); $(window).scroll(function() {
+var scroll = $(window).scrollTop();
 
-$(function() {
-    var header = $(".nav-logo-lg");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 200) {
-            header.removeClass('nav-logo-lg').addClass("nav-logo-sm");
-        } else {
-            header.removeClass("nav-logo-sm").addClass('nav-logo-lg');
-        }
-    });
+    if (scroll >= 200) {
+      if(!logo.hasClass("nav-logo-sm")) {
+        logo.hide();
+        logo.removeClass('nav-logo-lg').addClass("nav-logo-sm").fadeIn( "slow");
+      }
+    } else {
+      if(!logo.hasClass("nav-logo-lg")) {
+        logo.hide();
+        logo.removeClass("nav-logo-sm").addClass('nav-logo-lg').fadeIn( "slow");
+      }
+    }
+});
 });
 
 /* carousel */
+$(document).ready(function(){
+
 $('.carousel').carousel({
   interval: 6000,
   pause: "false"
@@ -78,6 +82,7 @@ $(window).on('resize', function (){
   $item.height($wHeight);
 });
 
+});
 /* HOMEPAGE VIDEO STOP PLAYING WHEN CLOSED*/
 $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
@@ -134,6 +139,7 @@ function iframeModalOpen(){
   } ) ( jQuery );
 
 /* JUMBO PARALLAX */
+
 var jumboHeight = $('.jumbotron').outerHeight();
 function parallax(){
     var scrolled = $(window).scrollTop();
@@ -145,5 +151,151 @@ $(window).scroll(function(e){
 });
 
 
+/* DESCRIPTION SHOW MORE SHOW LESS */
 
 
+/*  SHOW 50 MORE - SHOW 50 LESS */
+
+$(document).ready(function(){
+    
+   for (var i=0;i<21;i++) {
+    $('#internalActivities').append();
+}
+
+var trs = $("#internalActivities tr");
+var btnMore = $("#seeMoreRecords");
+var btnLess = $("#seeLessRecords");
+var trsLength = trs.length;
+var currentIndex = 10;
+
+trs.hide();
+trs.slice(0, 10).show(); 
+checkButton();
+
+btnMore.click(function (e) { 
+    e.preventDefault();
+    $("#internalActivities tr").slice(currentIndex, currentIndex + 50).show();
+    currentIndex += 50;
+    checkButton();
+});
+
+btnLess.click(function (e) { 
+    e.preventDefault();
+    $("#internalActivities tr").slice(currentIndex - 50, currentIndex).hide();          
+    currentIndex -= 50;
+    checkButton();
+});
+
+function checkButton() {
+    var currentLength = $("#internalActivities tr:visible").length;
+    
+    if (currentLength >= trsLength) {
+        btnMore.hide();            
+    } else {
+        btnMore.show();   
+    }
+    
+    if (trsLength > 10 && currentLength > 10) {
+        btnLess.show();
+    } else {
+        btnLess.hide();
+    }
+    
+}
+
+}); 
+
+/* SMOOTH SCROLLING */
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+
+/* FLEX SLIDER - PRODUCT DISPLAY TOP */
+
+ $(document).ready(function(){
+       $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+              });
+            });
+      });
+
+/* flexisel - bottom carousel */
+
+ $(document).ready(function(){
+        $(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 4000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+      });
+
+/* STOP IFRAME MODAL PLAY */
+
+$(document).ready(function(){
+       $("#meet-fat-brain-play-button").on('hidden.bs.modal', function (e) {
+    $("#meet-fat-brain-play-button iframe").attr("src", $("#meet-fat-brain-play-button iframe").attr("src"));
+            });
+      });
+
+/* BACK TO TOP SCROLL */
+
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.scroll-top').fadeIn(200);
+				} else {
+					$('.scroll-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.scroll-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});

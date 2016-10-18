@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Fat Brain Toy Co. | Fat Brain Toy Co.</title>
-
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS   -->
-    <link href="/css/main.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
-    
-    <script src="https://use.fontawesome.com/d0c538d1aa.js"></script>
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
 <body>
 <!-- Wrap all page content here -->
 <div id="wrap">
@@ -38,10 +9,12 @@
     
 <!-- SECONDARY HERO -->
     <section class="secondary-header-2" id="">
-        <div class="container-fluid fixed-bg-img-toys">
+        <div class="container-fluid parallax-container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-right">          
-                    <h2 class="secondary-header-title">Awards</h2>
+                <div class="parallax-window" data-parallax="scroll" data-image-src="/img/CoverShot.jpg">
+                    <div class="col-lg-8 col-lg-offset-2 text-right">          
+                    <h2 class="secondary-header-title-3">Award Winning Toys</h2>
+                </div>
                 </div>
             </div>
         </div>
@@ -49,6 +22,7 @@
     
 <!-- /SECONDARY HERO --> 
 
+<!---
 <!-- AWARDS HEADER -->
     <section class="awards-page-section content-section-a" id="">
         <div class="container">
@@ -62,6 +36,145 @@
         </div>
     </section>
 <!-- /AWARDS HEADER -->
+--->
+
+<!-- RECENT AWARDS -->
+    <section class="awards-section" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="awards-header">Just a Few of the Awards Won by Fat Brain Toy Co.</h2>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="toty" src="../img/toy_awards/toty.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Toy of the Year Finalist</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="astra" src="../img/toy_awards/astra.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">ASTRA Best Toys for Kids</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="toy_award" src="../img/toy_awards/toy_award.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Spielwarenmesse ToyAward</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="creative_child" src="../img/toy_awards/creative_child.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Creative Child Magazine</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="dr_toy" src="../img/toy_awards/dr_toy.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Dr. Toy</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="iparenting" src="../img/toy_awards/iparenting.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">iParenting Media Award</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="jpma" src="../img/toy_awards/jpma.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">JPMA Innovation Award</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="mr_dad" src="../img/toy_awards/mr_dad.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Mr. Dad</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="nappa" src="../img/toy_awards/nappa.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">NAPPA</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="parenting_center" src="../img/toy_awards/parenting_center.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">National Parenting Center</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="parents_choice" src="../img/toy_awards/parents_choice.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Parents' Choice</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 awards-wrapper">
+					<div align="center">
+						<img class="img-responsive" border="0" alt="teachers_choice" src="../img/toy_awards/teachers_choice.png">
+						<div class="caption text-center">
+							<h2 class="awards-label" style="color:#000000;">Teachers Choice</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+        </div>
+        
+        <br>
+        
+    </section>
+<!-- /RECENT AWARDS -->
+
+
+<section class=" awards-bckgd-orange content-section-a" id="">
+        <div class="container">
+            <div class="row">
+            	<div class="col-md-8 col-md-offset-2 text-center">
+            		<img  class="img-responsive" border="0" alt="toyaward_photo" src="../img/toyaward_photo.png">
+            	</div>
+            </div>
+        </div>
+</section>
+
+
+<!---
+
 <!-- AWARDS 2009 -->
     <section class=" awards-bckgd-orange content-section-a" id="">
         <div class="container">
@@ -158,6 +271,9 @@
     </section>
 <!-- /AWARDS 2006 -->
 
+
+--->
+
     
 <!-- EXPLORE MORE -->
     <section class="explore-section content-section-a" id="">
@@ -169,37 +285,37 @@
                 </div>
             </div>
             <div class="row">
-                    <a href="/product_catalog/toys.cfm" class="col-md-3 awards-wrapper text-center">
+                    <a href="/product_catalog/toys.cfm" class="col-md-6 col-sm-6 col-lg-3 awards-wrapper text-center">
                             <h2 class="explore-label">Toys</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/toys.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Toys  &nbsp;&rsaquo;</button>
                     </a>
-                    <a href="/product_catalog/games.cfm" class="col-md-3 awards-wrapper text-center">
+                    <a href="/product_catalog/games.cfm" class="col-md-6 col-sm-6 col-lg-3 awards-wrapper text-center">
                             <h2 class="explore-label">Games</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/games.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Games  &nbsp;&rsaquo;</button>
                     </a>
-                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-3 awards-wrapper text-center">
+                    <a href="/product_catalog/brain_teasers.cfm" class="col-md-6 col-sm-6 col-lg-3 awards-wrapper text-center">
                             <h2 class="explore-label">Brain Teasers</h2>
                             <div>
-                            <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                            <img src="../img/brainteasers.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
                             <button type="button" class="split-section-button btn btn-round-lg btn-lg">Discover Brain Teasers  &nbsp;&rsaquo;</button>
                     </a>
-                    <a href="/product_catalog/education.cfm" class="col-md-3 awards-wrapper text-center">
+                    <a href="/product_catalog/education.cfm" class="col-md-6 col-sm-6 col-lg-3 awards-wrapper text-center">
                             <h2 class="explore-label">Education</h2>
                             <div>
-                                <img src="http://placehold.it/140x140" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
+                                <img src="../img/education.jpg" class="explore-img img-responsive center-block img-circle" alt="Responsive image">
                             </div>
                             <div class="caption text-center">
                             </div>
@@ -214,12 +330,31 @@
   
 </div><!--/wrap-->
 
-
 <cfinclude template="/fatbraintoys/wholesale/templates/footer.cfm">
+    
+<!-- MODAL IFRAME -->
+    
+ <div class="modal fade" id="view-map">
+		<div class="modal-dialog">
+			<div class="modal-content">
 
+				<div class="modal-body">
+          
+          <div class="close-button">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.8125558054894!2d-96.24088104853112!3d41.26941701116042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793faaa663f6597%3A0x9b3508a6cd3d9102!2s20516+Nicholas+Cir%2C+Omaha%2C+NE+68022!5e0!3m2!1sen!2sus!4v1468513965656" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+				</div>
+
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal --> 
+
+<!-- /MODAL IFRAME -->
     
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
 
 </body>
 

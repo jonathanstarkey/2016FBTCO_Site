@@ -51,7 +51,7 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+/*  width: 100%;*/
   display: block;
 }
 .flexslider .slides:after {
@@ -132,7 +132,7 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: url(../images/img-sprite.png) -149px -6px ;
+  background: url(/wholesale/img/img-sprite.png) -149px -6px ;
   text-indent: -9999px ;
 }
 
@@ -142,7 +142,7 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav .flex-next {
   right: -50px;
 
-   background: url(../img/img-sprite.png) -184px -6px ;
+   background: url(/wholesale/img/img-sprite.png) -184px -6px ;
   
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
@@ -232,9 +232,12 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
 }
 .flex-control-thumbs li {
-  width: 18%;
+  width: 70px;
+    height: 70px;
   float: left;
   margin: 1% 1% 0 0;
+    
+    border: 1px solid #D1CFCF;
 }
 /*
 .flex-control-thumbs li:nth-child(4){
@@ -253,7 +256,7 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-    border: 1px solid #D1CFCF;
+/*    border: 1px solid #D1CFCF;*/
 }
 .flex-control-thumbs img:hover {
   opacity: 1;

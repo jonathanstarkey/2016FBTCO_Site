@@ -15,7 +15,10 @@
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen">
+
     <script src="https://use.fontawesome.com/d0c538d1aa.js"></script>
 
 
@@ -41,34 +44,32 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand nav-logo-sm" href="/index.cfm"><img src="/img/fatbraintoco.png" alt="">
-        </a>
+          <a class="navbar-brand nav-logo-sm" href="/index.cfm"></a>
       </div>
-      <div class="collapse navbar-collapse" >
+      <div class="collapse  navbar-collapse" >
         <ul class="nav navbar-nav navbarskinny navbar-right">
           <li><a href="/index.cfm">Home</a></li>
-          <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
-              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
-                <ul class="list-inline">
+          <li class="dropdown nav-hover"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
+              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-right">
+                
                     <li><a href="/product_catalog/toys.cfm">Toys</a></li>
                     <li><a href="/product_catalog/games.cfm">Games</a></li>
                     <li><a href="/product_catalog/brain_teasers.cfm">Brain Teasers</a></li> 
                     <li><a href="/product_catalog/education.cfm">Education</a></li>
-                  </ul>  
                 </ul>
             </li>
-          <li><a href="#section">Purchase</a></li>
+          <li><a href="/purchase.cfm">Purchase</a></li>
           <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Media <span class="caret"></span></a>
-              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
-                <ul class="list-inline">
+             <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
+                
                     <li><a href="/media/in_the_press.cfm">In the Press</a></li>
                     <li><a href="/media/awards.cfm">Awards</a></li>
                     <li><a href="/media/product_images.cfm">Product Images</a></li> 
                   </ul>  
-                </ul>
+               
             </li>
-          <li><a href="/about_us/index.cfm">About Us</a></li>
-            <li><a href="/contact/index.cfm">Contact</a></li>
+          <li><a href="/about_us.cfm">About Us</a></li>
+            <li><a href="/contact.cfm">Contact</a></li>
             <li><button type="button" class="btn class account-btn btn-danger" data-toggle="modal" data-target="#account-login">
       Account Login</button>
             </li>
@@ -78,7 +79,6 @@
     </div><!--/.container -->
 </div><!--/.navbar -->
 
-
 <!-- Modal - Account Login -->
 <div id="account-login" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
@@ -86,30 +86,16 @@
     <!-- Modal content-->
     <div class="loginmodal-container">
 					<h1>Account Login</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
+				  <form action="/login.cfm" method="post">
+				  <input type="hidden" name="action" value="login">
+					<input type="text" name="username" placeholder="Username">
+					<input type="password" name="password" placeholder="Password">
 					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-				  </form>
+				  
 					
 				  <div class="login-help">
-					<a data-toggle="modal" href="#myModal-newaccount">Create Account?</a> - <a data-toggle="modal" href="#myModal-forgotpassword">Forgot Password</a>
+					<a data-toggle="modal" href="/contact.cfm">Create Account?</a> - <a data-toggle="modal" data-dismiss="modal" href="#myModal-forgotpassword">Forgot Password</a>
 				  </div>
-				</div>
-
-  </div>
-</div>
-    
-<!-- Modal - New Account -->
-<div id="myModal-newaccount" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-sm">
-      <!-- Modal content-->
-    <div class="loginmodal-container">
-					<h1>Create New Account</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
 				  </form>
 				</div>
 
@@ -124,42 +110,276 @@
         <h1>Forgot Password</h1><br>
           <form>
             <input type="text" name="user" placeholder="Username">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Next">
             <input type="email" name="pass" placeholder="Email">
-            <input type="submit" name="login" class="login loginmodal-submit" value="Send">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Next">
           </form>
-
-          <div class="login-help">
-            <a href="#">Create Account?</a>
-          </div>
       </div>
     </div>
 </div>
+<!-- Modal - Forgot Pasword -->
     
-   <div class="modal fade" id="meet-fat-brain-play-button">
-		<div class="modal-dialog">
-			<div class="modal-content">
+<!-- MODAL WHOLESALE CATALOG REQUEST -->
 
-				<div class="modal-body">
-          
-          <div class="close-button">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="embed-responsive embed-responsive-16by9">
-					            
-                                <iframe class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
-          </div>
-				</div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal-whole-cat-request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h2 class="whole-modal-lable">Wholesale Catalog Request </h2>
+                    </div>
 
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal --> 
+                    <!-- Modal Body -->
+                    <div class="modal-body">
 
+                        <form role="form" action="/send_packet.cfm" method="post">
+                        <input type="hidden" name="action" value="add">
+                            <br style="clear:both">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="first_name" placeholder="First Name" message="Your first name is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="last_name" placeholder="Last Name" message="Your last name is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="company" placeholder="Company" message="A company is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="address_1" placeholder="Address 1" message="Your address is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="address_2" placeholder="Address 2" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="city" placeholder="City" message="Your city is required" required="yes">
+                            </div>                     
+                            <div class="form-group">
+                                <select class="form-control" name="state">
+		                          <cfinclude template="/fatbraintoys/templates/states.cfm">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="zip" placeholder="Zip" message="Your zip code is required" required="yes">
+                            </div>       
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="email" placeholder="Email" message="Your email address is required" required="yes">
+                            </div>
+                        
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" id="submit" name="submit" value="Send Message" class="btn account-btn btn-danger pull-right" onclick="submit()">Submit Form</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /MODAL WHOLESALE CATALOG REQUEST -->
+
+        <!-- MODAL REP GROUPS -->
+
+        <div class="modal fade" id="myModal-rep-groups">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <img style="margin: 0 auto;" src="/img/repMap.jpg" class="img-responsive" alt="Rep Groups Map">
+                    </div>
+
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- /MODAL REP GROUPS -->
+            
+<!-- MODAL WHOLESALE CATALOG REQUEST -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal-whole-cat-request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h2 class="whole-modal-lable">Wholesale Catalog Request </h2>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+
+                        <form role="form">
+                            <br style="clear:both">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="first_name" placeholder="First Name" message="Your first name is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="last_name" placeholder="Last Name" message="Your last name is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="company" placeholder="Company" message="A company is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="address_1" placeholder="Address 1" message="Your address is required" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="address_2" placeholder="Address 2" required="yes">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="city" placeholder="City" message="Your city is required" required="yes">
+                            </div>                     
+                            <div class="form-group">
+                                <select class="form-control" name="state">
+		                          <cfinclude template="/fatbraintoys/templates/states.cfm">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="zip" placeholder="Zip" message="Your zip code is required" required="yes">
+                            </div>       
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="email" placeholder="Email" message="Your email address is required" required="yes">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" id="submit" name="submit" value="Send Message" class="btn account-btn btn-danger pull-right">Submit Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /MODAL WHOLESALE CATALOG REQUEST -->
+
+        <!-- MODAL TERMS AND CONDITIONS -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal-terms-and-conditions">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h2 class="whole-modal-lable">Wholesale Terms & Conditions </h2>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="">
+                        <div class="col-md-12 contact-info">
+                                    <h2 class="terms-lable">MAP & 3rd Party Website Policy: &nbsp;(<a href="/downloads/map_policy.pdf" style="text-decoration: underline;">Download Policy</a> )</h2>
+                                    <p class="terms-copy">Fat Brain Toy Co. instituted a Minimum Advertised Price (MAP) policy in 2012 to establish and maintain the quality and value of our brand as well as our commitment to the specialty toy and gift industry. Our focus remains on supporting specialty retailers in today&rsquo;s rapidly changing retail environment. Effective immediately, Fat Brain Toy Co. has implemented a new policy applicable to third party internet retail sites. As of today, we will discontinue shipping to any customers selling Fat Brain Toy Co. products on Amazon.com via Fulfillment by Amazon (FBA). Furthermore, any company listing Fat Brain Toy Co. products for sale on Amazon.com via their Fulfillment by Amazon (FBA) program will be subject to immediate account suspension. We will continue monitoring and enforcing our MAP policy on all independent and third party sites, and customers found in violation will be subject to permanent account suspension. 
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Wholesale Discount:</h2>
+                                    <p class="terms-copy">All prices listed on the order form are wholesale cost in U.S. dollars. Fat Brain Toy Co. does not pre-price products. Suggested Retail is double the wholesale cost. 
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Conditions:</h2>
+                                    <p class="terms-copy">You warrant the information provided on your order to be true. You grant Fat Brain Toy Co. permission to investigate applicable credit references, including bank, commercial and consumer credit checks, if necessary. You understand that credit information regarding your account may be provided to credit reporting agencies or upon our request as a reference. You agree that Fat Brain Toy Co.&rsquo;s Terms and Conditions of Sale applies for all sales of goods by Fat Brain Toy Co. You understand that all products sold are non-returnable. You agree to pay Fat Brain Toy Co.&rsquo;s invoices within the stated terms of sale. You understand that minimum orders and re-orders are $200 and that orders are shipped FOB Omaha, Nebraska. You understand any credit given to you by Fat Brain Toy Co. is discretionary with Fat Brain Toy Co. and may be revoked at any time. You agree to pay $20 per check on all returned and NSF checks. This agreement shall be governed by the state of Nebraska. If your account is placed for collection, or if the services of an attorney are required to enforce payment, you agree to pay all costs and fees, including reasonable legal fees. All orders are subject to acceptance at Fat Brain Toy Co.&rsquo;s main office and are specifically conditioned upon buyer&rsquo;s acceptance of these terms and conditions.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Proof of Delivery:</h2>
+                                    <p class="terms-copy">Fat Brain Toy Co. will ship your order complete (or to your instructions) to the address shown on your purchase order. A tracking number will be available for your convenience. If you need assistance tracking your package(s), please contact Fat Brain Toy Co. Customer Care Center at 800.335.5621 or at sales@fatbraintoyco.com. While we do everything to prevent it, product can go missing or become damaged during shipment. Please contact Fat Brain Toy Co. regarding any missing or damaged merchandise within 10 days of the order&rsquo;s arrival. Fat Brain Toy Co. reserves the right to refuse any shipment claims submitted after the 10-day period has expired.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Shipping:</h2>
+                                    <p class="terms-copy">Shipments are FOB Fat Brain Toy Co.&rsquo;s warehouse in Omaha, Nebraska. Shipping costs are paid by the customer. We offer Free Freight on orders over $2,000 subject to in-stock merchandise purchased at wholesale prices and shipped to an address within the Continental United States via UPS Ground or other carrier selected by Fat Brain Toy Co. Most orders ship within 2 working days.  
+                                    </p>
+                                   
+                                    <h2 class="terms-lable">Drop Shipments:</h2>
+                                    <p class="terms-copy">Customer drop shipments are accepted for an additional fee of $7.95 per order plus freight. Drop ship orders must be placed through your online account.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Returns:</h2>
+                                    <p class="terms-copy">Fat Brain Toy Co. does not accept returns. All sales are final.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Backorders:</h2>
+                                    <p class="terms-copy">Please indicate if you accept backorders when you create your account or issue a purchase order. Unless otherwise requested, we back- order items if they are out of stock when you order. Shipping charges are added to backorders. Customer is responsible for canceling any unwanted backorders.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Payment:</h2>
+                                    <p class="terms-copy">Orders are shipped prepaid, credit card (Visa, MasterCard, American Express, Discover), or Net 30 days with pre-approved credit.  
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Credit Terms:</h2>
+                                    <p class="terms-copy">You understand that your opening order will be prepaid by credit card. We accept those cards mentioned above. Established businesses may apply for credit by completing our credit application at www.fatbraintoyco.com/app.cfm or by submitting a copy of an existing credit reference sheet. Upon approval, terms are Net 30 days, FOB Fat Brain Toy Co.&rsquo;s warehouse in Omaha, Nebraska. Accounts with a past due invoice will not be shipped and shall bear interest at the lesser of 18% or the maximum allowed by law for any past due balance.   
+                                    </p>
+                                   
+                                    <h2 class="terms-lable">Notice:</h2>
+                                    <p class="terms-copy">Prices and terms are subject to change without notice. We regret any typographical errors and cannot be held responsible for them.   
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Warning:</h2>
+                                    <p class="terms-copy">Some of our products contain small parts and may be a choking hazard. 
+                                        <br>
+                                        Choose from one of the following options:
+                                        <ol>
+                                            <li>Submit your order online and have access to features including order history, order tracking, Fat Brain Toy Co.&rsquo;s media center and much more! Order at www.fatbraintoyco.com.</li>
+                                            <li>Fax your purchase order to us 24 hours a day at 402-779-3253.</li>
+                                            <li>Mail your purchase order to Fat Brain Toy Co. at: 1405 N. 205th Street, Suite 120, Elkhorn, NE 68022.</li>
+                                            <li>Call our Customer Care Center toll free at 800.335.5621 between 9 am and 5 pm (CST) Monday through Friday.</li>
+                                            <li>Email your order: sales@fatbraintoyco.com.</li>
+                                            <li>Call your local sales representative. Don&rsquo;t know who your rep is? Find out at www.fatbraintoyco.com.</li>
+                                        </ol>
+                                    </p>
+                                    
+                                    <h2 class="terms-lable">Minimums:</h2>
+                                    <p class="terms-copy">We require a low minimum opening order of $200. Reorders are also $200. Prices are F.O.B. Omaha NE.   
+                                    </p>
+                                   
+                                    <h2 class="terms-lable">Case Packs:</h2>
+                                    <p class="terms-copy">Dado Squares, Brain Food and Math Busters can be mixed within the case pack.    
+                                    </p>
+                                   
+                                    
+                                </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <p class="terms-footer">&copy; 2016 Fat Brain Toy Co. All rights reserved. No packaging, text, designs or images may be reproduced or digitized without our prior written permission.    
+                                    </p>
+                                 
+                                    <p class="terms-footer">www.FatBrainToyCo.com     
+                                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal -->
+
+        <!-- /TERMS AND CONDITIONS -->
     
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
 <script type="text/javascript"  src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
+<!--<script type="text/javascript" src="/js/main.js"></script>-->
+<script src="/js/parallax.min.js"></script>
+<!-- PRODUCT DISPLAY TOP - Product Page -->
+ <script src="/js/imagezoom.js" type="text/javascript"></script>
+<!-- FLEX SLIDER - PRODUCT DISPLAY TOP - Product Page -->
+<script defer src="/js/jquery.flexslider.js" type="text/javascript"></script>
+<!-- flexisel - bottom carousel - Product Page -->
+<!--<script defer src="/js/jquery.flexisel.js" type="text/javascript"></script>-->
+<!--<script type="text/javascript" src="/js/jquery.flexisel.js"></script>-->
+<!--  <script type="text/javascript" src="/js/main.js"></script>          -->
 
 </body>
 
