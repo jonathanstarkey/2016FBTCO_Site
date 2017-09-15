@@ -14,12 +14,20 @@ body {
     background-color: #ffffff;
 }
 
+.content-section-b {
+    padding: 50px 0;
+}
+
+
+.pad-l-r-0 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
 /* Wrapper for page content to push down footer */
 
 #wrap {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
+    min-height: calc(100vh - 370px)!important;
     /* Negative indent footer by its height */
     margin: 0 auto 0px;
     /* Pad bottom by footer height */
@@ -452,6 +460,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e27225', end
 }
 
 .split-container-red {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ee3647+50 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 50%, rgba(238,54,71,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 50%,rgba(238,54,71,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 50%,rgba(238,54,71,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ee3647',GradientType=1 ); /* IE6-9 */
+
+}
+
+.split-container-red-toy_offer {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ee3647+50 */
 background: rgb(255,255,255); /* Old browsers */
 background: -moz-linear-gradient(left,  rgba(255,255,255,1) 50%, rgba(238,54,71,1) 50%); /* FF3.6-15 */
@@ -1048,6 +1066,41 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f7f9',GradientType=1 ); /* IE6-9 */
 }
 
+.video-header {
+    margin-top: 0px;
+}
+
+.specs-header {
+    border-bottom: 0px!important;
+    
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    color: #6d6e71;
+}
+
+.specs-header-2 {
+    margin-top: 0px;
+    padding-left: 15px;
+    
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    color: #6d6e71;
+}
+
+.specs-header-3 {
+    
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #6d6e71;
+}
+
+.specs-divider {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6d6e71;
+}
+
+
 .bottom-slider-header {
     margin: 0;
 }
@@ -1094,6 +1147,15 @@ h1 {
     height: 100%;
 }
 
+.join-section {
+    position: relative;
+        background-color: #0199a7;
+        color: #ffffff;
+    min-height: 270px;
+    height: auto !important;
+    height: 100%;
+}
+
 .downloadable-content-header {
     margin-top: 0;
     margin-bottom: 20px;
@@ -1106,6 +1168,7 @@ h1 {
 .downloadable-content-wrapper{
  border-left:2px solid #ffffff;
 }
+
 
 .downloadable-content-spacer {
     margin-left:20px;

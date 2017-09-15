@@ -6,6 +6,8 @@
 <div id="wrap">
      
     <cfinclude template="/fatbraintoys/wholesale/templates/header.cfm">
+        
+        
  
 <!-- Begin page content -->
 
